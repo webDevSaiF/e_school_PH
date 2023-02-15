@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@400;700&family=Montserrat:wght@600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --dark-blue: #413960;
+  --light-black-color: #6c6b6b;
+  --black-color-500: #585859;
+  --footer-bg: #282531;
+  --footer-message-color: #cdcdcd;
+  --sign-in-btn-bg: #21b573;
+  --text-orange: #fd511a;
+  --info-card-bg: #f8fffb;
+}
+body {
+  /* font-family: "Caveat", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+/* ==CSS INDEX==
+=> 00. REUSABLE CSS
+=> 01. REUSABLE CSS
+=> 02. HEADER SECTION
+=> 03. HERO SECTION
+=> 04. INFO SECTION
+=> 05. COURSES SECTION
+=> 06. TESTIMONIAL SECTION
+=> 07. FOOTER SECTION
+*/
+/* == 00. REUSABLE CSS== */
+.bg-light-green {
+  background-color: #f0fff0;
+}
+
+/* .section-title {
+  font-family: "Caveat", cursive;
+  font-size: 48px;
+  border-bottom: 4px solid var(--price-tag-color);
+  max-width: 130px;
+} */
+/* .buy-now-btn {
+  background-color: var(--price-tag-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  padding: 9px 25px;
+  transition: all 0.4s ease-in;
+} */
+/* .card {
+  border: none;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding-top: 40px;
+} */
+/* .card-footer {
+  background: transparent;
+} */
+.radius-12 {
+  border-radius: 12px;
+}
+/* ==PADDING== */
+.py-25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.py-42 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.py-55 {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.py-56 {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+.pt-43 {
+  padding-top: 43px;
+}
+.pt-56 {
+  padding-top: 56px;
+}
+.pb-27 {
+  padding-bottom: 27px;
+}
+.pb-63 {
+  padding-bottom: 63px;
+}
+.mt-19 {
+  margin-top: 19px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mb-3 {
+  margin-bottom: 3px !important;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-43 {
+  margin-bottom: 43px;
+}
+.mb-62 {
+  margin-bottom: 62px;
+}
+.mb-67 {
+  margin-bottom: 67px;
+}
+.mb-76 {
+  margin-bottom: 76px;
+}
+.mb-80 {
+  margin-bottom: 80px;
+}
+/* == 01. HEADER SECTION== */
+.header-section > .container {
+  max-width: 1123px;
+}
+.header-section .navbar img {
+  max-width: 198px;
+}
+.header-section .navbar-nav .nav-item a {
+  font-size: 16px;
+  line-height: 24px;
+}
+.header-section .navbar-nav .nav-item:last-child a {
+  background-color: var(--sign-in-btn-bg);
+  color: var(--white-color);
+  padding: 12px 28px;
+  border-radius: 33px;
+  line-height: 19px;
+}
+.header-section .navbar-nav .nav-item:last-child a {
+  transition: all 0.4s ease;
+}
+.header-section .navbar-nav .nav-item:last-child a:hover {
+  transform: scale(0.95);
+}
+.header-section .navbar-nav .nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* == 02. HERO SECTION== */
+.hero-section > .container {
+  max-width: 1070px;
+}
+.hero-section h6 {
+  line-height: 24px;
+  color: var(--text-orange);
+}
+.hero-section h1 {
+  line-height: 70px;
+  font-size: 48px;
+  color: var(--black-color);
+}
+.hero-section h1 .color-changer {
+  color: var(--sign-in-btn-bg);
+}
+.hero-section p {
+  line-height: 36px;
+  font-size: 16px;
+  color: var(--light-black-color);
+}
+.get-started-btn {
+  background-color: var(--sign-in-btn-bg);
+  color: var(--white-color);
+  padding: 12px 36px;
+  font-size: 16px;
+  border-radius: 33px;
+  line-height: 19px;
+  border: none;
+  transition: all 0.4s ease;
+}
+.get-started-btn:hover {
+  transform: scale(0.95);
+}
+/* ==03.INFO SECTION== */
+.info-section > .container {
+  max-width: 1200px;
+}
+.info-section .info-card {
+  background: #f8fffb;
+  padding-top: 52px;
+  padding-bottom: 49px;
+  border-radius: 10px;
+  max-width: 270px;
+  height: 270px;
+  transition: all 0.4s ease;
+}
+.info-section .info-card:hover {
+  background: var(--white-color);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+}
+.info-section .info-card img {
+  max-width: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
+}
+/* ==05. COURSES SECTION== */
+.courses-section .section-title {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+}
+.courses-section .card {
+  padding: 24px 20px 31px 19px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  border: none;
+  transition: all 0.4s ease;
+}
+.courses-section .card:hover {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+.courses-section .card .card-body {
+  padding: 0;
+}
+.courses-section .card .card-title {
+  font-weight: 500;
+  color: var(--dark-blue);
+  font-size: 24px;
+  line-height: 36px;
+}
+.courses-section .card .card-text {
+  color: var(--black-color-500);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 19px;
+}
+.courses-section .card .get-started-btn {
+  padding: 8px 28px;
+  margin-bottom: 34px;
+}
+.courses-section .card .course-card-info img {
+  max-width: 20px;
+  position: relative;
+  top: -1px;
+}
+
+.courses-section .card .course-card-info h6 {
+  display: inline;
+  margin-left: 2px;
+  color: var(--black-color-500);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* ==06. TESTIMONIAL SECTION== */
+.testimonial-section .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--black-color);
+  text-align: center;
+}
+.testimonial-section .carousel-item > .row {
+  max-width: 805px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial-section .carousel-item .testimonial-text {
+  font-size: 16px;
+  line-height: 30px;
+}
+.testimonial-section .carousel.slide {
+  padding-bottom: 60px !important;
+}
+.testimonial-section .carousel-indicators li {
+  background-color: var(--dark-blue);
+}
+
+/* ==07.FOOTER SECTION== */
+.footer-section {
+  background: var(--footer-bg);
+}
+.footer-section > .container {
+  max-width: 1190px;
+}
+.footer-section .footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--white-color);
+}
+.footer-section .footer-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--white-color);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.footer-section .footer-message {
+  color: var(--footer-message-color);
+  font-size: 16px;
+  line-height: 30px;
+}
+@media screen and (max-width: 769px) {
+  /* ==MARGIN== */
+  .mb-m-20 {
+    margin-bottom: 20px !important;
+  }
+  .mb-m-40 {
+    margin-bottom: 40px !important;
+  }
+  /* ==FLEX== */
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  /* ==HERO SECTION== */
+  .hero-section .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  /* ==INFO SECTION== */
+  .info-section .col-md-3 > .inner {
+    max-width: 80%;
+  }
+  /* ==COURSES SECTION== */
+  .courses-section .card-deck {
+    flex-wrap: wrap !important;
+    flex-direction: column;
+  }
+  /* ==TESTIMONIAL SECTION== */
+  .testimonial-section .carousel .col-md-3 img {
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  /* ==FOOTER SECTION== */
+  .footer-section .footer-title {
+    text-align: center;
+  }
+  .footer-section .footer-text {
+    text-align: center;
+  }
+}
