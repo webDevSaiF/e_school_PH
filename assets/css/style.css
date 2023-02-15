@@ -31,30 +31,6 @@ body {
 .bg-light-green {
   background-color: #f0fff0;
 }
-
-/* .section-title {
-  font-family: "Caveat", cursive;
-  font-size: 48px;
-  border-bottom: 4px solid var(--price-tag-color);
-  max-width: 130px;
-} */
-/* .buy-now-btn {
-  background-color: var(--price-tag-color);
-  color: var(--white-color);
-  border: none;
-  border-radius: 8px;
-  padding: 9px 25px;
-  transition: all 0.4s ease-in;
-} */
-/* .card {
-  border: none;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-  padding-top: 40px;
-} */
-/* .card-footer {
-  background: transparent;
-} */
 .radius-12 {
   border-radius: 12px;
 }
@@ -319,20 +295,51 @@ body {
     flex-wrap: wrap;
   }
   /* ==HERO SECTION== */
+  .hero-section {
+    margin-bottom: 0;
+  }
   .hero-section .row {
     flex-direction: column-reverse;
     text-align: center;
+  }
+  .header-section .navbar-nav .nav-item:last-child a {
+    display: none;
+  }
+  .hero-section h1 {
+    line-height: 42px;
+    font-size: 32px;
+  }
+  .hero-section p {
+    margin-bottom: 20px !important;
   }
   /* ==INFO SECTION== */
   .info-section .col-md-3 > .inner {
     max-width: 80%;
   }
   /* ==COURSES SECTION== */
+  .courses-section .section-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
   .courses-section .card-deck {
     flex-wrap: wrap !important;
     flex-direction: column;
   }
+  .courses-section .card-title {
+    font-size: 22px !important;
+  }
+  .courses-section .card-text {
+    font-size: 15px !important;
+  }
   /* ==TESTIMONIAL SECTION== */
+  .testimonial-section {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .testimonial-section .section-title {
+    font-size: 30px;
+    margin-bottom: 40px !important;
+  }
   .testimonial-section .carousel .col-md-3 img {
     max-width: 50%;
     display: block;
